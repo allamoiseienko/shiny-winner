@@ -1,0 +1,364 @@
+body {
+	margin: 0;
+}
+.dominos {
+	width: 100%;
+	height: 1000px;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.video {
+	position: absolute;
+	z-index: -1;
+	opacity: 1;
+}
+.video:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.58);
+}
+.franch {
+	width: 900px;
+	height: 655px;
+	z-index: 1;
+	color: white;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+hr {
+	color: white;
+	width: 100px;
+	padding: 0 50px;
+	margin-bottom: 43px;
+}
+.franch h1 {
+	text-align: center;
+	font-family: 'Roboro',Arial,sans-serif;
+	font-size: 48px;
+}
+.franch h2 {
+	text-align: center;
+	font-family: 'Roboro',Arial,sans-serif;
+}
+.we {
+	font-size: 22px;
+	font-family: 'Roboro',Arial,sans-serif;
+	text-align: center;
+}
+.franch a {
+	text-decoration: none;
+	color: rgb(255, 133, 98);
+	font-family: 'Roboro',Arial,sans-serif;
+	font-size: 22px;
+}
+.anketa {
+	width: 100%;
+	background: rgb(57, 100, 142);
+	color: white;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 150px 0;
+}
+.null {
+	width: 100%;
+
+	background-color: rgb(57, 100, 142);
+}
+.usio {
+	width: 900px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-family: 'Roboro',Arial,sans-serif;
+}
+.kandidat {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-bottom: 75px;
+}
+.kandidat h1 {
+	font-size: 38px;
+}
+.kandidat a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	color: rgb(255,255,255);
+	font-weight: 300;
+}
+.ank {
+	max-width: 655px;
+}
+.ank h3 {
+	font-size: 18px;
+	margin-left: 0;
+	margin-top: 30px;
+}
+input {
+	background-color: rgb(57, 100, 142);
+	border: 0;
+	border-bottom: 2px solid rgb(255,255,255);
+	width: 655px;
+	height: 40px;
+	font-size: 16px;
+	color: rgb(255,255,255);
+}
+select {
+	background-color: rgb(57, 100, 142);
+	border: 0;
+	border-bottom: 2px solid rgb(255,255,255);
+	width: 655px;
+	height: 40px;
+	font-size: 16px;
+	color: rgb(255,255,255);
+}
+.city input {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 15px;
+	height: 15px;
+	color: rgb(255,255,255);
+}
+.lazer {
+	display: none;
+}
+label {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	border-color: rgb(255, 255, 255);
+	opacity: .6;
+	border-radius: 50%;
+	cursor: pointer;
+}
+label:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	margin: auto;
+	transform: scale(0);
+	transition: .4s;
+}
+.lazer:checked+label:before {
+	transform: scale(1);
+	opacity: 1;
+}
+.lazer:checked+label {
+	opacity: 1;
+}
+.pizza {
+	color: rgb(255, 255, 255);
+	width: 78px;
+	text-align: center;
+}
+.amount p {
+	font-size: 12px;
+	opacity: 0.5;
+}
+.amount div {
+	height: 50px;
+	display: inline-flex;
+	font-size: 26px;
+	cursor: pointer;
+}
+.whou input {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 15px;
+	height: 15px;
+	color: rgb(255,255,255);	
+}
+.owner input {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 15px;
+	height: 15px;
+	color: rgb(255,255,255);		
+}
+.photo p {
+	font-size: 12px;
+	opacity: 0.5;
+}
+.add {
+	display: none;
+}
+.photo p label {
+	width: 102px;
+	height: 38px;
+	color: rgb(255,255,255);
+	background-color: rgb(195, 30, 57);
+	border-color: rgb(195, 30, 57);
+	border-radius: 30px;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: underline rgb(195, 30, 57);
+	opacity: 1;
+}
+.know p input  {
+	display: none;
+}
+.know p span {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 15px;
+	height: 15px;
+	color: rgb(255,255,255);
+}
+.know p label {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid;
+	border-color: rgb(255, 255, 255);
+	opacity: .6;
+	border-radius: 1%;
+	cursor: pointer;
+}
+label:after {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 4px;
+	margin: auto;
+	transform: scale(0);
+}
+#sait:checked+label:after {
+	transform: scale(1);
+	opacity: 1;
+}
+#sait:checked+label {
+	opacity: 1;
+}
+.effer {
+	display: inline-flex;
+	overflow: hidden;
+	border-radius: 30px;
+	width: 252.7px;
+	height: 60px;
+}
+.send {
+	color: rgb(255,255,255);
+	background-color: rgb(195, 30, 57);
+	border-radius: 30px;
+	font-size: 16px;
+	width: 252.7px;
+	height: 60px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	text-decoration: underline rgb(195, 30, 57);
+}
+.effects {
+	width: 252.7px;
+	height: 60px;
+	position: relative;
+	animation-name: wow;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+.effect {
+	width: 45px;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: skewX(-45deg);
+	background: linear-gradient(90deg,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+}
+@keyframes wow {
+	100% { transform: translateX(100%);}
+}
+.tilda {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.tildas {
+	width: 270px;
+	height: 30px;
+	margin: 0 auto;
+	cursor: pointer;
+	opacity: .4;
+}
+.tildas div {
+	display: inline-flex;
+}
+.tildas a {
+	text-decoration: underline black;
+}
+img {
+	width: 30px;
+	height: 30px;
+}
+.pic {
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.madeon {
+	width: 100px;
+	height: 30px;
+	text-align: right;
+	padding-right: 12px;
+	font-family: Arial;
+	font-size: 12px;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	vertical-align: middle;
+}
+.tildan {
+	width: 100px;
+	height: 30px;
+	padding-left: 12px;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-family: Arial;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	vertical-align: middle;
+}
+.tildas:hover {
+	opacity: 1;
+}
+
+

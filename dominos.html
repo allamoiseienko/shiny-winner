@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="dominos.css">
+</head>
+<body>
+	<div class="dominos">
+		<div class="video" style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 100%; opacity: 1; overflow: hidden;">
+			<video autoplay src="https://biz.dominos.ua/wp-content/uploads/2019/08/dominos-1.mp4" muted="muted" style="position: relative; z-index: 0; top: 0px; left: 0px; min-width: 100%; min-height: 100%; height: 1000px; width: 1391px; object-fit: cover;">
+				</video>
+		</div>
+		<div class="franch">
+			<h1>Анкета франчайзі Domino's Pizza</h1>
+			<hr>
+			<span class="we">Ми розробили анкету для всіх, хто бажає стати партнером бренду Domino's Pizza, відкривши власну піцерію. Всі питання в цій анкеті - обов'язкові для заповнення.</span>
+			<h2>Перед заповненням анкети, будь ласка, детально ознайомтеся з сайтом</h2>
+			<a href="#"><b>https://biz.dominos.ua/</b></a>
+		</div>
+	</div>
+	<div class="anketa">
+		<div class="null">
+		</div>
+		<div class="usio">
+			<div class="kandidat">
+				<h1>Анкета для кандидата у франчайзi</h1>
+				<a href="#">https://biz.dominos.ua/</a>
+			</div>
+			<div class="ank">
+				<div class="name">
+					<h3>Як до Вас звертатися? (ПIБ повнiстю)</h3>
+					<input type="text" name="ФИО" value placeholder="Прізвищe ім'я по-батькові">
+				</div>
+				<div class="city">
+					<h3>Бажаний регіон відкриття (Область та Мiсто). Якщо Вашого міста немає в списку, то він вже або відкритий, або в ньому немає 50.000 населення.Увага! Для міст Дніпро і Харків загальна кількість піцерій для відкриття - від 5, протягом 2-3х років.
+					</h3>
+					<select>
+						<option value>Бажане місто для відкриття</option>
+						<option value>Київ</option>
+						<option value>Львів</option>
+						<option value>Харків</option>
+					</select>
+				</div>
+				<div class="page">
+					<h3>Посилання на персональну facebook чи instagram сторiнку</h3>
+					<input type="text" name="Соцсети" value placeholder="Ваші соціальні мережі">
+				</div>
+				<div class="city">
+					<h3>Чи проживаєте Ви у місті /області, в якому плануєте відкрити бізнес?</h3>
+					<p><input id="yesn" class="lazer" type="radio" name="city" />
+						<label for="yesn"></label>Так, проживаю</p>
+					<p><input id="noy" class="lazer" type="radio" name="city" />
+						<label for="noy"></label>Ні, не проживаю</p>
+					<p><input id="anoth" class="lazer" type="radio" name="city" />
+						<label for="anoth"></label>Інше</p>
+				</div>
+				<div class="amount">
+					<h3>Кількість піцерій, яку бажаєте відкрити</h3>
+					<p>1 піцерія = 20-30 тис квартир, 1 квартира = 3 людини</p>
+					<div>-</div>
+					<input type="text" class="pizza" value="1"> 
+					<div>+</div>
+				</div>
+				<div class="phone">
+					<h3>Контактний телефон</h3>
+					<input type="tel">
+				</div>
+				<div class="mail">
+					<h3>Контактний e-mail</h3>
+					<input type="email">
+				</div>
+				<div class="company">
+					<h3>Назва компанії і бренду, які ви представляєте</h3>
+					<input type="text" name="Соцсети" value placeholder="Перерахувати юридичні назви компаній і брендів">
+				</div>
+				<div class="doit">
+					<h3>Ваша сфера діяльності</h3>
+					<select>
+						<option value>Оберіть сферу діяльності</option>
+						<option value>Логістика</option>
+						<option value>Нерухомість</option>
+						<option value>Освіта</option>
+					</select>
+				</div>
+				<div class="whou">
+					<h3>Ким ви являєтесь в компанії?</h3>
+					<p><input id="kum" class="lazer" type="radio" name="city" />
+						<label for="kum"></label>Власник</p>
+					<p><input id="meneg" class="lazer" type="radio" name="city" />
+						<label for="meneg"></label>Топ-менеджер</p>
+					<p><input id="person" class="lazer" type="radio" name="city" />
+						<label for="person"></label>Співробітник</p>
+				</div>
+				<div class="owner">
+					<h3>Форма властності вашого бізнесу</h3>
+					<p><input id="fop" class="lazer" type="radio" name="city" />
+						<label for="fop"></label>ФОП</p>
+					<p><input id="tov" class="lazer" type="radio" name="city" />
+						<label for="tov"></label>ТОВ</p>
+				</div>
+				<div class="invest">
+					<h3>Вашi заплановані інвестиції в проект</h3>
+					<input type="text" name="Соцсети" value placeholder="Вказати суму, яку Ви готові вкласти в проект, $">
+				</div>
+				<div class="why">
+					<h3>Причини обрання франчайза Domino's як потенційного бізнесу?</h3>
+					<input type="text">
+				</div>
+				<div class="photo">
+					<h3>Фото першої сторінки вашого паспорта</h3>
+					<p>Тільки зображення</p>
+					<a href="#">
+						<p><label for="addd"><input type="file" class="add" id="addd">Add files</label> 
+						</p>		
+					</a>
+				</div>
+				<div class="know">
+					<h3>Я ознайомлений на сайті з інформацією відносно інвестицій, початкових та регулярних платежів</h3>
+					<p><input type="checkbox" id="sait" class="saitom"><label for="sait"></label><span>Ознайомлений з сайтом biz.dominos.ua</span>
+					</p>
+				</div>
+			</div>
+			<a href="#">
+				<div class="effer">
+					<div class="send">
+					<b>Надіслати анкету</b>
+					</div>
+					<div class="effects">
+						<div class="effect">
+						</div>
+					</div>
+				</div>	
+			</a>
+		</div>	
+	</div>
+	<div class="tilda">
+		<div class="tildas">
+			<a href="#">
+			<div> <span class="madeon">Made on</span></div>
+			<div class="pic"><img src="https://static.tildacdn.com/img/tildacopy.png" class="t-tildalabel__img">
+			</div>
+			<div><span class="tildan">Tilda</span></div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
