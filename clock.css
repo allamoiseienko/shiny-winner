@@ -1,0 +1,118 @@
+.clock {
+	width: 200px;
+	height: 200px;
+	border: 2px solid green;
+	border-radius: 50%;
+	background: rgba(147, 218, 149, 0.66);
+}
+.number {
+	position: absolute;
+	font-size: 25px;
+	color: orange;
+	font-weight: bold;
+}
+.zentr {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: green;
+	border-radius: 50%;
+	top: 90px;
+	left: 95px; 
+}
+.hor {
+	position: absolute;
+	width: 4px;
+	height: 35px;
+	left: 113px;
+	top: 75px;
+	background: black;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	animation: hour 43200s infinite linear;
+}
+@keyframes hour {
+	100% { 
+		transform: rotate(360deg);
+	}
+	}
+.min {
+	position: absolute;
+	width: 4px;
+	height: 55px;
+	left: 113px;
+	top: 54px;
+	background: black;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	animation: minut 3600s infinite linear; 
+}
+@keyframes minut {
+	100% { 
+		transform: rotate(360deg);
+	}
+	}
+.sec {
+	position: absolute;
+	width: 2px;
+	height: 70px;
+	left: 115px;
+	top: 40px;
+	background: red;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	animation: secund 60s infinite steps(60);
+}
+@keyframes secund {
+	100% { 
+		transform: rotate(360deg);
+	}
+	}
+.tw {
+	top: 9px; 
+	left: 102px;
+}
+.on {
+	top: 20px; 
+	left: 150px;
+}
+.tot {
+	top: 50px; 
+	left: 185px;
+}
+.thr {
+	top: 100px; 
+	left: 195px;
+}
+.fou {
+	top: 145px; 
+	left: 180px;
+}
+.fif {
+	top: 175px; 
+	left: 150px;
+}
+.sixn {
+	top: 185px; 
+	left: 104px;
+}
+.sev {
+	top: 175px; 
+	left: 65px;
+}
+.eig {
+	top: 145px; 
+	left: 30px;
+}
+.nin {
+	top: 100px; 
+	left: 11px;
+}
+.ten {
+	top: 60px; 
+	left: 20px;
+}
+.elev {
+	top: 23px; 
+	left: 50px;
+}
